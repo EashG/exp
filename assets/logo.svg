@@ -1,0 +1,23 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Oven Base -->
+  <rect x="4" y="12" width="32" height="24" rx="4" fill="#F6C7D2" stroke="#3B2F2F" stroke-width="1.5"/>
+  
+  <!-- Oven Door -->
+  <rect x="7" y="15" width="26" height="18" rx="2" fill="#FFFFFF" stroke="#3B2F2F" stroke-width="1"/>
+  
+  <!-- Oven Window -->
+  <rect x="10" y="18" width="20" height="8" rx="1" fill="#F8E7A2" opacity="0.7"/>
+  
+  <!-- Door Handle -->
+  <rect x="29" y="22" width="2" height="6" rx="1" fill="#3B2F2F"/>
+  
+  <!-- Steam/Heat Lines -->
+  <path d="M12 8 L12 4" stroke="#F6C7D2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 8 L20 4" stroke="#F6C7D2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 8 L28 4" stroke="#F6C7D2" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Cute Face on Oven -->
+  <circle cx="16" cy="22" r="1" fill="#3B2F2F"/>
+  <circle cx="24" cy="22" r="1" fill="#3B2F2F"/>
+  <path d="M18 26 Q20 28 22 26" stroke="#3B2F2F" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>

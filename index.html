@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MadOven - Freshly Baked Happiness</title>
+    <meta name="description" content="The MadOven bakery - Fresh daily bakes, made with love and locally sourced ingredients">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+===========================================
+    QUICK EDIT GUIDE FOR THE MADOVEN WEBSITE
+===========================================
+
+Welcome! This website is designed to be easily customizable. Here's where to make changes:
+
+1. BAKERY NAME & TAGLINE:
+   - Look for "EDIT HERE: BAKERY NAME" comments throughout the file
+   - Main tagline is in the Hero Section
+
+2. MENU ITEMS:
+   - Find the "Menu Section" below
+   - Each menu item has name, description, and price marked with "EDIT HERE"
+
+3. CONTACT INFORMATION:
+   - Address, phone, email are in the "Location & Contact" sections
+   - Look for "EDIT HERE: CONTACT" comments
+
+4. OWNER INFORMATION:
+   - Owner name and story are in the "About Us" section
+
+5. IMAGES:
+   - All images are in the /assets/ folder
+   - Replace placeholder images with your own photos
+   - Keep the same filenames or update the src attributes
+
+6. COLORS & STYLING:
+   - Main colors are defined at the top of styles.css
+   - Look for the :root section with CSS variables
+
+7. WORKING HOURS:
+   - Edit the hours table in the "Location & Hours" section
+
+Remember: Always keep the "EDIT HERE" comments for future reference!
+-->
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <!-- EDIT HERE: BAKERY LOGO -->
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="The MadOven Logo" class="logo">
+                    <!-- EDIT HERE: BAKERY NAME -->
+                    <span class="logo-text">The MadOven</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- EDIT HERE: BAKERY NAME & TAGLINE -->
+                    <h1 class="hero-title">Welcome to The MadOven</h1>
+                    <p class="hero-tagline">Freshly baked happiness, every day</p>
+                    <button class="hero-btn" onclick="scrollToSection('menu')">See Our Bakes</button>
+                </div>
+                <div class="hero-image">
+                    <!-- EDIT HERE: HERO IMAGE -->
+                    <img src="assets/hero.jpg" alt="Delicious baked goods from The MadOven bakery" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights/Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <!-- EDIT HERE: FEATURE 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🌅</div>
+                        <h3>Fresh Daily</h3>
+                        <p>Baked fresh every morning with the finest ingredients</p>
+                    </div>
+                    
+                    <!-- EDIT HERE: FEATURE 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">💝</div>
+                        <h3>Made with Love</h3>
+                        <p>Every recipe crafted with passion and care</p>
+                    </div>
+                    
+                    <!-- EDIT HERE: FEATURE 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Locally Sourced</h3>
+                        <p>Supporting local farmers with premium ingredients</p>
+                    </div>
+                    
+                    <!-- EDIT HERE: FEATURE 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🍳</div>
+                        <h3>Expert Bakers</h3>
+                        <p>Traditional techniques meets modern creativity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <!-- EDIT HERE: ABOUT IMAGE -->
+                        <img src="assets/about.jpg" alt="The MadOven bakery interior" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h2>About The MadOven</h2>
+                        <!-- EDIT HERE: OWNER NAME -->
+                        <p class="about-intro">Founded by <strong>Sarah Johnson</strong> in 2018</p>
+                        <!-- EDIT HERE: BAKERY STORY -->
+                        <p>The MadOven began as a dream to bring artisanal baking to our community. What started in a small kitchen has grown into a beloved neighborhood bakery where traditional recipes meet creative innovation.</p>
+                        <p>We believe that great baking starts with great ingredients. That's why we source locally whenever possible and never compromise on quality. Every loaf, pastry, and cake is made with the same care and attention we'd give to treats for our own family.</p>
+                        <p>Come visit us and taste the difference that passion makes!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Our Delicious Menu</h2>
+                <div class="menu-grid">
+                    <!-- EDIT HERE: MENU ITEM 1 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/cupcake.jpg" alt="Vanilla cupcake with buttercream frosting" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Vanilla Cupcake</h3>
+                            <p>Fluffy vanilla sponge topped with creamy buttercream</p>
+                            <span class="price">₹90</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 2 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/croissant.jpg" alt="Buttery golden croissant" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Butter Croissant</h3>
+                            <p>Flaky, buttery pastry perfect for breakfast</p>
+                            <span class="price">₹120</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 3 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/cheesecake.jpg" alt="Blueberry cheesecake slice" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Blueberry Cheesecake</h3>
+                            <p>Rich and creamy with fresh blueberry topping</p>
+                            <span class="price">₹250</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 4 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/cinnamon-roll.jpg" alt="Cinnamon roll with glaze" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Cinnamon Roll</h3>
+                            <p>Warm, gooey roll with cinnamon and sweet glaze</p>
+                            <span class="price">₹110</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 5 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/chocolate-muffin.jpg" alt="Double chocolate muffin" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Chocolate Muffin</h3>
+                            <p>Double chocolate delight with chocolate chips</p>
+                            <span class="price">₹95</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 6 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/danish.jpg" alt="Fruit danish pastry" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Fruit Danish</h3>
+                            <p>Flaky pastry with seasonal fruit and cream</p>
+                            <span class="price">₹140</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 7 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/sourdough.jpg" alt="Artisan sourdough bread" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Sourdough Bread</h3>
+                            <p>Traditional sourdough with perfect crust</p>
+                            <span class="price">₹180</span>
+                        </div>
+                    </div>
+
+                    <!-- EDIT HERE: MENU ITEM 8 -->
+                    <div class="menu-item">
+                        <img src="assets/menu/eclair.jpg" alt="Chocolate eclair" loading="lazy">
+                        <div class="menu-content">
+                            <h3>Chocolate Éclair</h3>
+                            <p>Choux pastry filled with cream and chocolate glaze</p>
+                            <span class="price">₹130</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="gallery-grid">
+                    <!-- EDIT HERE: GALLERY IMAGES -->
+                    <img src="assets/gallery/gallery1.jpg" alt="Fresh baked bread display at The MadOven" loading="lazy">
+                    <img src="assets/gallery/gallery2.jpg" alt="Colorful cupcakes arrangement" loading="lazy">
+                    <img src="assets/gallery/gallery3.jpg" alt="Baker preparing pastries" loading="lazy">
+                    <img src="assets/gallery/gallery4.jpg" alt="Beautiful cake display" loading="lazy">
+                    <img src="assets/gallery/gallery5.jpg" alt="Morning pastries selection" loading="lazy">
+                    <img src="assets/gallery/gallery6.jpg" alt="Cozy bakery interior" loading="lazy">
+                    <img src="assets/gallery/gallery7.jpg" alt="Fresh cookies cooling" loading="lazy">
+                    <img src="assets/gallery/gallery8.jpg" alt="Artisan bread varieties" loading="lazy">
+                    <img src="assets/gallery/gallery9.jpg" alt="Seasonal special desserts" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonials-grid">
+                    <!-- EDIT HERE: TESTIMONIAL 1 -->
+                    <div class="testimonial">
+                        <p>"Best cupcakes I've ever had! The vanilla buttercream is absolutely divine."</p>
+                        <cite>— A. Sharma</cite>
+                    </div>
+                    
+                    <!-- EDIT HERE: TESTIMONIAL 2 -->
+                    <div class="testimonial">
+                        <p>"The MadOven's sourdough bread is perfection. I come here every weekend!"</p>
+                        <cite>— R. Patel</cite>
+                    </div>
+                    
+                    <!-- EDIT HERE: TESTIMONIAL 3 -->
+                    <div class="testimonial">
+                        <p>"Amazing quality and such friendly service. This place feels like home."</p>
+                        <cite>— M. Singh</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Hours Section -->
+        <section class="location">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-info">
+                        <h2>Visit Us</h2>
+                        <!-- EDIT HERE: BAKERY ADDRESS -->
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>123 Baker Street<br>
+                            Connaught Place<br>
+                            New Delhi, 110001</p>
+                        </div>
+                        
+                        <!-- EDIT HERE: CONTACT PHONE -->
+                        <div class="phone">
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                        
+                        <!-- EDIT HERE: WORKING HOURS -->
+                        <div class="hours">
+                            <h3>Hours</h3>
+                            <table class="hours-table">
+                                <tr><td>Monday - Friday</td><td>7:00 AM - 8:00 PM</td></tr>
+                                <tr><td>Saturday</td><td>7:00 AM - 9:00 PM</td></tr>
+                                <tr><td>Sunday</td><td>8:00 AM - 7:00 PM</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <!-- EDIT HERE: MAP IMAGE -->
+                        <img src="assets/map-placeholder.jpg" alt="Map showing The MadOven bakery location" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-info">
+                    <!-- EDIT HERE: CONTACT EMAIL -->
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p id="email-text">hello@themadoven.com</p>
+                        <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
+                    </div>
+                    
+                    <!-- EDIT HERE: CONTACT PHONE -->
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    
+                    <!-- EDIT HERE: SOCIAL LINKS -->
+                    <div class="contact-item">
+                        <h3>Follow Us</h3>
+                        <p>Instagram: @themadoven</p>
+                        <p>Facebook: The MadOven Bakery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- EDIT HERE: BAKERY NAME IN FOOTER -->
+                <div class="footer-brand">
+                    <h3>The MadOven</h3>
+                    <p>Freshly baked happiness, every day</p>
+                </div>
+                
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            
+            <!-- EDIT HERE: COPYRIGHT YEAR -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 The MadOven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
