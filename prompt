@@ -1,0 +1,44 @@
+You are tasked with creating a SINGLE-PAGE, STATIC website for a bakery called The MadOven. The design should be inspired by https://cakery.weblium.site/ while maintaining originality. The final deliverable must be clean, minimalistic, cute, and beginner-friendly in terms of editing and customization.
+
+The site must be ONE PAGE only, static (no backend), and must not include any “Order Now” or e-commerce functionality. The design should be cute, soft, and minimal with pastel tones, rounded corners, and simple illustrations/icons. All code must be simple, well-structured, and heavily commented so that even a beginner can easily edit bakery name, tagline, menu items, images, prices, address, owner info, and contact details. Provide clear “EDIT HERE” comment markers around every editable field. At the top of index.html, include a QUICK EDIT GUIDE comment block explaining where and how to make changes.
+
+The file structure should be: /index.html, /styles.css, /script.js, /assets/ (images, logo, icons, placeholder photos), and /assets/fonts/ (include one cute open-source font such as Quicksand or Nunito embedded locally as WOFF2, no external links or CDNs).
+
+Layout and section order (mirroring the placement in the reference site):
+1. Header/Navigation: logo on the left (placeholder logo.svg in /assets/), bakery name The MadOven, and navigation links (Home, About, Menu, Gallery, Testimonials, Contact). Add a hamburger menu for mobile.
+2. Hero Section: headline with bakery name The MadOven, cute tagline (e.g., “Freshly baked happiness, every day”), and a button labeled “See Our Bakes” that scrolls to the Menu section. Place a hero image on the right or as a background (placeholder hero.jpg).
+3. Highlights/Features: 3–4 feature cards with small icons (e.g., “Fresh Daily,” “Made with Love,” “Locally Sourced”).
+4. About Us: image on one side, text on the other. Include owner name placeholder and editable story about The MadOven.
+5. Menu: grid layout with 6–12 placeholder items (image, name, short description, price). Example items: Cupcake — ₹90, Croissant — ₹120, Blueberry Cheesecake Slice — ₹250, Cinnamon Roll — ₹110.
+6. Gallery: 6–9 placeholder images in a neat grid; use loading="lazy".
+7. Testimonials: 2–3 short quotes with customer names (e.g., “Best cupcakes I’ve ever had!” — A. Sharma).
+8. Location & Hours: editable bakery address, contact number, and working hours table. Use a static map image placeholder instead of embedded maps.
+9. Contact Section: display bakery email, phone, and placeholder social links as text only. Include a simple “Copy email” button (vanilla JS).
+10. Footer: repeat bakery name The MadOven, © year, and mini navigation.
+
+Style guidelines: use soft pastel palette with CSS variables at the top of styles.css:
+:root {
+  --bg: #FFF9F5;
+  --text: #3B2F2F;
+  --accent: #F6C7D2;
+  --accent2: #F8E7A2;
+  --card: #FFFFFF;
+  --muted: #7A6A6A;
+}
+Typography should use a single cute rounded font (Quicksand or Nunito embedded locally). Keep design airy with whitespace, rounded corners (12–20px), gentle shadows, and soft hover effects.
+
+Accessibility and UX: use semantic HTML tags (header, nav, main, section, footer), alt text for all images with EDIT HERE markers, minimum font size 16px, responsive design for all devices, smooth scrolling for nav links, and respect prefers-reduced-motion for animations.
+
+Script.js should include only lightweight vanilla JS: mobile menu toggle, smooth scrolling, a “Back to top” button appearing after scroll, and copy-to-clipboard functionality for email. No frameworks or external scripts.
+
+Performance: compress placeholder images, lazy-load all non-hero images, and keep code lightweight and fast.
+
+Deliverables checklist:
+- Fully working one-page static site with sections in the specified order.
+- Clean, readable, and well-commented source code with “EDIT HERE” markers and a Quick Edit Guide.
+- Local embedded WOFF2 font (not externally hosted).
+- Placeholder images, alt text, lazy loading, and smooth scrolling.
+- Cute, minimal, original design clearly inspired by the reference.
+- Bakery name throughout: The MadOven.
+
+Generate the full project files exactly as specified.
